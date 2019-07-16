@@ -11,11 +11,6 @@ public class SqrtTest {
 
     public static void main(String[] args) {
 
-        double t = 3.2454;
-        double sqrt = sqrt(t);
-        int sqrt2 = sqrtInt(160000);
-        System.out.println(sqrt);
-        System.out.println(sqrt2);
     }
 
     /**
@@ -50,11 +45,11 @@ public class SqrtTest {
         long j = x / 2 + 1;
         while (i <= j) {
             long mid = (i + j) / 2;
-            long sq = mid * mid;
-            if (sq == x) {
+            long product = mid * mid;
+            if (product == x) {
                 System.out.println("循环次数:" + count);
                 return (int) mid;
-            } else if (sq < x) {
+            } else if (product < x) {
                 i = mid + 1;
             } else {
                 j = mid - 1;
@@ -68,4 +63,5 @@ public class SqrtTest {
 
         return (int) j;
     }
+
 }
