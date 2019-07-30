@@ -1,4 +1,4 @@
-package com.lee.algorithm;
+package com.lee.algorithm.other.test;
 
 import org.junit.Test;
 

@@ -1,4 +1,9 @@
-package com.lee.algorithm;
+package com.lee.algorithm.other.test;
+
+import edu.princeton.cs.algs4.StdRandom;
+import org.junit.Test;
+
+import java.math.BigDecimal;
 
 /**
  * Created with : IntelliJ IDEA
@@ -64,4 +69,12 @@ public class SqrtTest {
         return (int) j;
     }
 
+    @Test
+    public void test22(){
+        BigDecimal bigDecimal = new BigDecimal(1.00000);
+        BigDecimal bigDecimal2 = new BigDecimal(1.000);
+        boolean equals = bigDecimal.equals(bigDecimal2);
+        System.out.println(equals);
+
+    }
 }
