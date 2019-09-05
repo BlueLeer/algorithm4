@@ -1,4 +1,4 @@
-package com.lee.algorithm.practise;
+package com.lee.algorithm.practise.P1_1;
 
 import junit.framework.Assert;
 
@@ -9,7 +9,7 @@ import junit.framework.Assert;
  */
 public class P1_1_9 {
     public static void main(String[] args) {
-        Assert.assertEquals("相等的",toHex(100), toHex2(100));
+        Assert.assertEquals("相等的", toHex(100), toHex2(100));
     }
 
     public static String toHex(int num) {

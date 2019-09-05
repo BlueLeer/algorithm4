@@ -1,4 +1,4 @@
-package com.lee.algorithm.practise;
+package com.lee.algorithm.practise.P1_1;
 
 /**
  * @author WangLe
@@ -8,6 +8,7 @@ package com.lee.algorithm.practise;
 public class P1_1_14 {
     public static void main(String[] args) {
         System.out.println(lg(1));
+
     }
 
     public static int lg(int num) {

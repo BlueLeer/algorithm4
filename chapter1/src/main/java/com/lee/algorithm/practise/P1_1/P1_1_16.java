@@ -1,4 +1,4 @@
-package com.lee.algorithm.practise;
+package com.lee.algorithm.practise.P1_1;
 
 /**
  * @author WangLe

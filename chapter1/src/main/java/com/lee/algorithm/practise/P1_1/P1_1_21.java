@@ -1,4 +1,4 @@
-package com.lee.algorithm.practise;
+package com.lee.algorithm.practise.P1_1;
 
 import edu.princeton.cs.algs4.StdIn;
 
