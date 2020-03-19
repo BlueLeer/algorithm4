@@ -8,7 +8,7 @@ package com.lee.algorithm.other.test;
 public class Shift {
     public static void main(String[] args) {
         System.out.println(shift(16));
-        System.out.println(shift(15));
+//        System.out.println(shift(15));
     }
 
     public static int shift(int a) {

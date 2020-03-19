@@ -19,4 +19,9 @@ public class PrimeTest {
         }
         return true;
     }
+
+    public static void main(String[] args) {
+        boolean prime = isPrime(111);
+        System.out.println("最终结果: " + prime);
+    }
 }
