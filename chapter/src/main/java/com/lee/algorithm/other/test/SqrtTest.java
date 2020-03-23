@@ -66,6 +66,12 @@ public class SqrtTest {
 
         System.out.println("循环次数:" + count);
 
+        boolean a = false;
+        boolean b = true;
+        System.out.println();
+        char c1 = 'A';
+        char c2 = 'b';
+        System.out.println(c1 > c2);
         return (int) j;
     }
 
