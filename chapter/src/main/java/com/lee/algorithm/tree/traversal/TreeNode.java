@@ -7,9 +7,9 @@ package com.lee.algorithm.tree.traversal;
  * @date 2020/3/22 22:45
  */
 public class TreeNode {
-    int value;
-    TreeNode lChild;
-    TreeNode rChild;
+    public int value;
+    public TreeNode lChild;
+    public TreeNode rChild;
 
     public TreeNode(int value, TreeNode lChild, TreeNode rChild) {
         this.value = value;

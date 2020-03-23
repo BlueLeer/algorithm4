@@ -16,7 +16,5 @@ public class Test {
         String s4 = "world";
         System.out.println(s3 == s4);
 
-        HashMap map = new HashMap();
-        map.put()
     }
 }

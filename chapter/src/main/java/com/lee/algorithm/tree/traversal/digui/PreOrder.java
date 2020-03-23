@@ -1,17 +1,19 @@
-package com.lee.algorithm.tree.traversal;
+package com.lee.algorithm.tree.traversal.digui;
 
+
+import com.lee.algorithm.tree.traversal.TreeNode;
 
 import java.util.ArrayList;
 import java.util.List;
 
 /**
- * 中序遍历,即:第二次到达某个节点时访问,所得的序列为中序遍历序列
- * 也可以说是:先访问左孩子,再访问根节点,最后访问右孩子
+ * 先序遍历,即:第一次到达某个节点时访问,所得的序列为先序遍历序列
+ * 也可以说是:先访问根节点,再访问左孩子,最后访问右孩子
  *
  * @author lee
  * @date 2020/3/22 22:47
  */
-public class MidOrder {
+public class PreOrder {
     TreeNode root;
 
     // 相当于将一个顺序存储结构的完全二叉树变成链式的存储结构
@@ -37,13 +39,13 @@ public class MidOrder {
         if (root == null) {
             return;
         }
-        traItem(root.lChild, result);
         result.add(root.value);
+        traItem(root.lChild, result);
         traItem(root.rChild, result);
     }
 
     public static void main(String[] args) {
-        MidOrder preOrder = new MidOrder();
+        PreOrder preOrder = new PreOrder();
         List<Integer> tra = preOrder.tra();
         tra.forEach(c -> {
             System.out.println(c + ",");
