@@ -7,7 +7,7 @@ import java.util.Iterator;
 /**
  * @author WangLe
  * @date 2019/9/11 15:37
- * @description
+ * @description 实现了Iterable接口
  */
 public class MyArray implements Iterable {
 
