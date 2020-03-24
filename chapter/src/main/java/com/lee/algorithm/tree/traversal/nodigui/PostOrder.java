@@ -42,6 +42,7 @@ public class PostOrder {
         TreeNode bTree = buildTree();
         List<Integer> pre = post(bTree);
         pre.forEach(c -> System.out.print(c + ","));
+//        post2(bTree);
 
     }
 
@@ -62,7 +63,7 @@ public class PostOrder {
             if (!stack.empty()) {
                 // 获取栈顶元素值
                 temp = stack.peek();
-                if (temp.rChild == null || temp == pre) {
+                if (temp.rChild == null || temp.rChild == pre) {
                     temp = stack.pop();
                     result.add(temp.value);
                     pre = temp;
@@ -75,5 +76,28 @@ public class PostOrder {
         }
 
         return result;
+    }
+
+    public static void post2(TreeNode root){
+        Stack<TreeNode> stack = new Stack<>();
+        TreeNode temp = root;
+        TreeNode pre = null;
+        while(temp != null || !stack.empty()) {
+            while(temp != null) {
+                stack.push(temp);
+                temp = temp.lChild;
+            }
+            if (!stack.empty()){
+                temp = stack.peek();
+                if(temp.rChild == null || temp.rChild == pre) {
+                    temp = stack.pop();
+                    System.out.print(temp.value + ",");
+                    pre = temp;
+                    temp = null;
+                }else{
+                    temp = temp.rChild;
+                }
+            }
+        }
     }
 }

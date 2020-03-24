@@ -56,6 +56,7 @@ public class LevelOrder {
 
     /**
      * 层次遍历2,和上面的方式是一样的
+     *
      * @return
      */
     public List<Integer> levelOrder2() {
@@ -71,6 +72,20 @@ public class LevelOrder {
 
         return result;
     }
+
+
+    public void level3(TreeNode root) {
+        Queue<TreeNode> queue = new LinkedList<>();
+        queue.add(root);
+        while (!queue.isEmpty()) {
+            // 出栈
+            TreeNode poll = queue.poll();
+            System.out.print(poll.value + ",");
+            if (poll.lChild != null) queue.add(poll.lChild);
+            if (poll.rChild != null) queue.add(poll.rChild);
+        }
+    }
+    
 
     public static void main(String[] args) {
         LevelOrder levelOrder = new LevelOrder();

@@ -1,5 +1,7 @@
-package com.lee.algorithm.tree.traversal;
+package com.lee.algorithm.tree.traversal.digui;
 
+
+import com.lee.algorithm.tree.traversal.TreeNode;
 
 import java.util.ArrayList;
 import java.util.List;

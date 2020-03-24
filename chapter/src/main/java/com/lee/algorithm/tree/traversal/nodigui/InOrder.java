@@ -57,6 +57,7 @@ public class InOrder {
                 stack.push(temp);
                 temp = temp.lChild;
             }
+            // 没有左孩子了就出栈
             temp = stack.pop();
             // 访问栈顶元素
             result.add(temp.value);
